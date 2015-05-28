@@ -1,0 +1,19 @@
+.hero-unit {
+  background-image: url("../img/background-grey.png");
+}
+
+#images {
+  position: relative;
+  left: -1.9em;
+}
+
+#bioblock {
+  border-left: lightgrey solid 1px;
+  padding-left: 1em;
+}
+
+#IowaState_1kmScale, #IowaState_100mScale, #IowaState_10mScale, #IowaState_AllClasses, #IowaState_Elevations {
+  /*display: none;*/
+  float: right;
+  position: absolute;
+}
