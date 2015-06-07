@@ -1,13 +1,33 @@
 <header class="site-header">
 
   <!-- Header -->
-  <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div id="header" class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">Prognostic Data Solutions</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="glyphicon glyphicon-road" aria-hidden="true"></span> Menu
+        </button>
+        <a class="navbar-brand" href="./">Prognostic Data Solutions</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+
+          {% if page.section == "home" %}  
+            <li class="active"><a href="/index.html">Home</a></li>
+          {% else %}
+            <li><a href="/index.html">Home</a></li>
+          {% endif %}
+         
+          {% if page.section == "blog" %}
+            <li class="active"><a href="/blog/">Blog</a></li>
+          {% else %}
+            <li><a href="/blog/">Blog</a></li>
+          {% endif %}
+
+
+        </ul>
       </div>
     </div>
-    
   </div>
 
 </header>
