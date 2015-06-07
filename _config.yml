@@ -2,12 +2,10 @@
 title: Prognostic Data Solutions - Blog
 email: evan@prognosticdatasolutions.com
 description:
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://www.prognosticdatasolutions.com" # the base hostname & protocol for your site
 twitter_username: Evan_Coop
 github_username:  ecooper2
 
 # Build settings
 markdown: kramdown
-source:      ./blog_source
-destination: ./blog
+permalink: "/blog/:title"
