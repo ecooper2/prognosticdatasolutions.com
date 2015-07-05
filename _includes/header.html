@@ -7,17 +7,17 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="glyphicon glyphicon-road" aria-hidden="true"></span> Menu
         </button>
-        <a class="navbar-brand" href="./">Prognostic Data Solutions</a>
+        <a style="font-size: 1.4em" class="navbar-brand" href="./">Prognostic Data Solutions</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
 
-          {% if page.section == "home" %}  
+          {% if page.section == "home" %}
             <li class="active"><a href="/index.html">Home</a></li>
           {% else %}
             <li><a href="/index.html">Home</a></li>
           {% endif %}
-         
+
           {% if page.section == "blog" %}
             <li class="active"><a href="/blog/">Blog</a></li>
           {% else %}
